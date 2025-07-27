@@ -1,0 +1,39 @@
+Company to Excel Exporter – Instructions for Use
+===============================================
+
+Thank you for using the Company to Excel Exporter app!
+Follow these steps to run the program on your Windows computer:
+
+1. Download and Extract
+-----------------------
+- Download the ZIP file you received.
+- Right-click the ZIP and choose "Extract All..."
+- Choose a folder where you want to extract the contents.
+
+2. Run the Application
+----------------------
+- Double-click the file: company_to_data_excel.exe
+- A window will open.
+
+3. Choose Files
+---------------
+- First, select the input .txt file containing the company data.
+- Then, choose where to save the exported Excel (.xlsx) file.
+
+4. Wait for Processing
+----------------------
+- The app will automatically convert the data and save it to Excel format.
+- You’ll get a confirmation once it's done.
+
+Notes
+-----
+- No installation is required.
+- You don’t need Python installed on your computer.
+- If Windows shows a warning, click “More Info” > “Run Anyway” (this is normal for new apps).
+- This app is made for Windows only.
+
+Contact
+-------
+For questions or feedback, feel free to reach out to me.
+
+Enjoy using the app! 😊
