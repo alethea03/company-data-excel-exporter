@@ -1,0 +1,73 @@
+STF Company Product Info Exporter
+==================================
+
+A simple and efficient Python GUI tool that allows you to enter company and product details, display the full structured data, and copy it directly to your clipboard — Excel-ready.
+
+FEATURES
+--------
+- Input company name, product name, and product number
+- Automatically generate a formatted product reference block
+- View the entire formatted data before copying
+- One-click "Copy to Clipboard" for easy Excel pasting
+- Great for preparing product lists, orders, or catalog info
+
+SAMPLE OUTPUT FORMAT
+--------------------
+When you input:
+
+Company Name: Chung Kee  
+Product Name: Bowl  
+Product Number: CK-101  
+
+The output will look like:
+
+Chung Kee  
+Bowl  
+CK-101  
+
+Each product is stacked and separated by a new line — making it directly pasteable into Excel cells.
+
+HOW TO USE
+----------
+1. Install Python (if you don’t have it): https://www.python.org/downloads/
+2. Run the script:
+
+   python company_to_data_excel.py
+
+3. Fill in the form and click "Add Entry"
+4. Click "Copy to Clipboard" to paste into Excel
+
+REQUIREMENTS
+------------
+- Python 3.6 or higher
+- tkinter (usually included in standard Python installs)
+
+If tkinter is missing, install it via:
+
+   pip install tk
+
+FILE STRUCTURE
+--------------
+STF Data Program/
+├── company_to_data_excel.py   # Main GUI script
+└── README.txt                 # Project instructions
+
+NOTES
+-----
+- Data is copied in multiline text form — you can paste it into Excel rows by selecting the starting cell.
+- Works well with most modern Excel versions and Google Sheets.
+
+FUTURE IMPROVEMENTS
+-------------------
+- Export to .xlsx directly
+- Import multiple entries from CSV
+- Auto-generate product codes
+
+AUTHOR
+------
+Created by [Your Name]  
+Contact: your.email@example.com
+
+LICENSE
+-------
+This project is open-source and free to use under the MIT License.
