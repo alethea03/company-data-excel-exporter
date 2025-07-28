@@ -78,6 +78,17 @@ def generate_preview():
     preview_box.delete(1.0, tk.END)
     preview_box.insert(tk.END, final_row)
 
+def clear_text():
+    for entry in entries.values():
+        entry.delete(0, tk.END)
+        
+    for pname, price, link in product_entries:
+        pname.delete(0, tk.END)
+        price.delete(0, tk.END)
+        link.delete (0, tk.END)
+        
+    preview_box.delete(0, tk.END)
+    
 def copy_to_clipboard():
     data = preview_box.get(1.0, tk.END).strip()
     if not data:
@@ -90,5 +101,6 @@ def copy_to_clipboard():
 # Buttons
 tk.Button(root, text="Generate Preview", command=generate_preview).grid(row=102, column=0, pady=5)
 tk.Button(root, text="Copy to Clipboard (Excel Ready)", command=copy_to_clipboard).grid(row=102, column=1, pady=5)
-
+tk.Button(root, text="Clear All", command=clear_text).grid(row=102, column=2,pady=5)
+ 
 root.mainloop()
